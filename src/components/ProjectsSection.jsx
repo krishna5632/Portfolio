@@ -5,7 +5,6 @@ import project1 from "../assets/project1.png";
 import project2 from "../assets/project2.png";
 import project3 from "../assets/project3.png";
 
-
 gsap.registerPlugin(ScrollTrigger);
 
 export default function ProjectsSection() {
@@ -54,8 +53,8 @@ export default function ProjectsSection() {
   }, []);
 
   return (
-    <section className="w-full flex flex-col items-center px-6 py-20">
-      
+    <section className="w-full flex flex-col items-center px-4 sm:px-6 py-20">
+
       <h2 className="text-3xl font-bold mb-10 w-full max-w-6xl font-cinematic">
         Some Things I've Built
       </h2>
@@ -64,14 +63,15 @@ export default function ProjectsSection() {
         {projects.map((p, i) => (
           <div
             key={i}
-            ref={el => projectsRef.current[i] = el}
-            className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center border border-black/10 rounded-xl p-5"
+            ref={(el) => (projectsRef.current[i] = el)}
+            className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 items-center border border-black/10 rounded-xl p-5"
           >
             {/* IMAGE */}
-            <div className="rounded-lg overflow-hidden">
+            <div className="rounded-lg overflow-hidden w-full">
               <img
                 src={p.image}
-                className="w-full h-[260px] object-cover transition"
+                className="w-full h-56 sm:h-64 md:h-72 object-cover rounded-lg"
+                alt={p.title}
               />
             </div>
 
@@ -81,11 +81,11 @@ export default function ProjectsSection() {
 
               <h3 className="text-2xl font-bold font-cinematic">{p.title}</h3>
 
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-gray-700 leading-relaxed text-sm sm:text-base break-words">
                 {p.desc}
               </p>
 
-              <p className="text-sm text-gray-500">
+              <p className="text-sm text-gray-500 break-words">
                 {p.tech}
               </p>
 
@@ -93,7 +93,7 @@ export default function ProjectsSection() {
                 href={p.live}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-4 px-5 py-2 border border-black rounded-md hover:bg-black hover:text-white transition font-cinematic"
+                className="inline-block mt-4 px-5 py-2 border border-black rounded-md hover:bg-black hover:text-white transition font-cinematic text-sm sm:text-base"
               >
                 Preview
               </a>
