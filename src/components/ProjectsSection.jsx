@@ -1,6 +1,12 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import project1 from "../assets/project1.png";
+import project2 from "../assets/project2.png";
+import project3 from "../assets/project3.png";
+import project1 from "../assets/project1.png";
+import project2 from "../assets/project2.png";
+import project3 from "../assets/project3.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -13,7 +19,7 @@ export default function ProjectsSection() {
       title: "NIT-C HUB",
       desc: "Developed a student community platform that connects students, alumni, and faculty with resource sharing, doubt discussion forums, campus updates, personalized profiles, and collaborative learning features to strengthen engagement across institutes",
       tech: "Javascript | React.js | Tailwind | MongoDB | Node.js | Gsap",
-      image: "src/assets/project1.png",
+      image: project1,
       live: "https://www.nitchub.in/"
     },
     {
@@ -21,7 +27,7 @@ export default function ProjectsSection() {
       title: "Shipment.com",
       desc: "Designed and developed a role-based logistics optimization platform with secure authentication, warehouse and dealer dashboards, shipment and truck management, shipment–truck matching algorithms, booking workflows, live tracking, and comprehensive analytics with CO₂ and cost-saving metrics.",
       tech: "React.js | Tailwind | MongoDB | Node.js | Javascript | Gsap",
-      image: "src/assets/project2.png",
+      image: project2,
       live: "https://shipment-frontend-one.vercel.app/"
     },
     {
@@ -29,7 +35,7 @@ export default function ProjectsSection() {
       title: "Prithvi'25",
       desc: "Contributed to the development and deployment of Prithvi ’25, the annual civil engineering fest website of NIT Calicut, collaborating with the tech and design teams to build a seamless, interactive, and user-friendly event platform.",
       tech: "Javascript | Next.js | Gsap | Tailwind ",
-      image: "src/assets/project3.png",
+      image: project3,
       live: "https://www.prithvi25.in/"
     }
   ];
