@@ -118,7 +118,7 @@ const LandingSection = () => {
             </a>
 
             <a
-              href="https://drive.google.com/file/d/14DzW9kcM62KJw3znFdhVXAM48COBzPZy/view?usp=sharing"
+              href="https://drive.google.com/file/d/10sA-LubpGxwO3xfeo3EPYlUZ-D_1mMmH/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 sm:px-6 py-2 border border-black rounded-lg hover:bg-black hover:text-white transition font-cinematic text-center text-sm sm:text-base"
